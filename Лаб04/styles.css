@@ -1,43 +1,93 @@
 body {
-    font-family: 'Arial', sans-serif;
-    max-width: 600px;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
-    line-height: 1.6;
-    color: #333;
+    line-height: 1.4;
+    color: #2D2D2D;
 }
-header {
+
+h1 {
+    font-weight: bold;
+    font-size: 64px;
+    margin: 20px 0 0 0;
+}
+
+.pronunciation {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+section,
+div {
+    border-top: 1px solid #ddd;
+    margin-bottom: 40px;
+    padding-top: 5px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+h2 {
+    font-family: Arial, Helvetica, serif;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.main-icon {
+    height: 36px;
+}
+
+.meaning {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+}
+
+.meaning-definitions {
+    font-size: 18px;
+}
+
+.meaning-definitions li {
+    margin-bottom: 10px;
+}
+
+.definition-examples {
+    list-style: none;
+    padding-left: 0;
+    color: gray;
+}
+
+footer {
+    font-size: 14px;
+    color: gray;
+}
+
+.footer-links {
+    padding-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: underline;
+    color: #757575;
+    margin-bottom: -20px;
+}
+
+.footer-links a:hover {
+    color: lightsalmon;
+}
+
+.source-link {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
-h1 {
-    font-size: 2em;
-    margin: 0;
+
+.source-link * {
+    margin-right: 15px;
 }
-.pronunciation {
-    font-style: italic;
-    color: gray;
-}
-section {
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-    margin-top: 10px;
-}
-h2 {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 5px;
-}
-.meaning {
-    color: #555;
-}
-footer {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: gray;
-}
-a {
-    text-decoration: none;
-    color: #007bff;
+
+.source-link img {
+    height: 12px;
 }
