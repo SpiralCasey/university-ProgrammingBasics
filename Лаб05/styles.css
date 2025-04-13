@@ -1,0 +1,156 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    max-width: 1100px;
+    margin: auto;
+    line-height: 1.4;
+    color: #1E2329;
+}
+
+.plans-table {
+    width: 100%;
+    table-layout: fixed;
+    background-color: #f8f8f8;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.plans-table th {
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.plans-table td {
+    padding: 8px;
+}
+
+.plans-table td img {
+    vertical-align: middle;
+    height: 1em;
+}
+
+.plans-table .countries-icons img {
+    height: 0.8em;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.plans-table * {
+    font-weight: 400;
+    color: #2D2D2D;
+}
+
+.plans-table tr:nth-child(even) td:nth-child(odd):not(.section-header),
+.plans-table tr:nth-child(odd) td:nth-child(even):not(.section-header) {
+    background-color: #f2f2f2;
+}
+
+.plans-table tr:nth-child(even) td:nth-child(odd):not(.section-header),
+.plans-table tr:nth-child(odd) th:nth-child(odd):not(.section-header) {
+    background-color: #ffffff;
+}
+
+.section-header {
+    background-color: #eeeeee;
+}
+
+.new-price {
+    color: #a7a7a7;
+    font-size: 14px;
+}
+
+.new-price .number {
+    color: #bb0404;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.old-price {
+    color: #c0c0c0;
+    font-size: 0.6em;
+}
+
+.number {
+    color: #747474;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.plans-table button {
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #e0d7ca;
+    width: 50%;
+    height: 32px;
+    background: linear-gradient(0deg, #fbd33b, #ffeaaa);
+    margin: 5px 0 5px 0;
+}
+
+.plans-table td:first-child {
+    vertical-align: middle;
+    text-align: left;
+}
+
+.plans-table td:first-child img {
+    text-align: left;
+    margin-right: 10px;
+    height: 1em;
+}
+
+.plans-table td:first-child.centered {
+    text-align: center;
+}
+
+.plans-table td:first-child.centered img {
+    height: 2em;
+    margin-bottom: 0.5em;
+}
+
+.plans-table a {
+    text-decoration: none;
+    color: #4B8ABF;
+}
+
+.th-description {
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+}
+
+footer {
+    font-size: 14px;
+    color: gray;
+}
+
+.footer-links {
+    padding-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: underline;
+    color: #757575;
+    margin-bottom: -20px;
+}
+
+.footer-links a:hover {
+    color: lightsalmon;
+}
+
+.source-link {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.source-link * {
+    margin-right: 15px;
+}
+
+.source-link img {
+    height: 12px;
+}
