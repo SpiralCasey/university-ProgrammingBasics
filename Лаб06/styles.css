@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    line-height: 1.4;
+    color: #1E2329;
+    background-color: #f8f9fc;
+}
+
+.contact-form {
+    position: relative;
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 50px 50px 100px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 50px;
+}
+
+.contact-form div {
+    margin: 0 auto;
+}
+
+.thin {
+    width: 90%;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 1em 0.3em 0.4em 0.6em;
+    margin-bottom: 2em;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #e2e2e2;
+    background: transparent;
+    outline: none;
+}
+
+.contact-form textarea {
+    padding-left: 1.5em;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    resize: vertical;
+    min-height: fit-content;
+}
+
+.float-label {
+    position: relative;
+}
+
+.float-label label {
+    position: absolute;
+    top: 1em;
+    left: 0.5em;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.float-label.textarea label {
+    margin: 0.2em 0 0 1em;
+}
+
+.float-label input:focus+label,
+.float-label input:not(:placeholder-shown)+label {
+    top: -0.8em;
+    font-size: 0.9em;
+}
+
+.float-label textarea:focus+label,
+.float-label textarea:not(:placeholder-shown)+label {
+    top: -2em;
+    font-size: 0.9em;
+}
+
+.contact-form .custom-select {
+    position: relative;
+    margin-bottom: 1em;
+    appearance: base-select;
+}
+
+.contact-form .custom-select label {
+    margin-left: 0.5em;
+    color: #999;
+}
+
+.contact-form .custom-select select {
+    padding-top: 0.5em;
+}
+
+.contact-form .custom-select option:checked {
+    background-color: #1E2329;
+    color: white;
+}
+
+.contact-form .custom-select option:focus-visible {
+    background-color: paleturquoise;
+}
+
+.contact-form button.close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.5em;
+    background-color: white;
+    color: #333;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.contact-form button.close:hover {
+    background-color: rgb(194, 67, 67);
+}
+
+.contact-form button.submit {
+    width: 100%;
+    padding: 1em;
+    font-size: 16px;
+    background-color: #0c0c25;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button.submit:hover {
+    background-color: #f8f9fc;
+    color: #1E2329;
+    border-color: #1E2329;
+}
+
+footer {
+    font-size: 14px;
+    color: gray;
+}
+
+.footer-links {
+    padding-top: 10px;
+}
+
+.footer-links a {
+    color: #757575;
+    text-decoration: underline;
+    margin-bottom: -20px;
+}
+
+.footer-links a:hover {
+    color: lightsalmon;
+}
+
+.source-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.source-link * {
+    margin-right: 15px;
+}
+
+.source-link img {
+    height: 0.9em;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/icons/assignment_1.svg">
+</head>
+
+<body>
+    <main>
+        <section class="contact-form">
+            <form action="#" method="post">
+                <button class="close" aria-label="Close form">&times;</button>
+
+                <h2>Send Us a Message</h2>
+
+                <div class="thin float-label">
+                    <input type="text" id="fullname" name="fullname" required placeholder=" ">
+                    <label for="fullname">Full name</label>
+                </div>
+
+                <div class="thin float-label">
+                    <input type="email" id="email" name="email" required placeholder=" ">
+                    <label for="email">Your email</label>
+                </div>
+
+                <div class="thin custom-select">
+                    <label>Inquiry Type:</label>
+                    <select id="select-action" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="post">Connection Issue</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="general">General</option>
+                        <option value="ask">Technical Issue</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="float-label textarea">
+                    <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                    <label for="message">Your message goes here…</label>
+                </div>
+
+                <button class="submit" type="submit">Submit form</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/CauldronOcean/Programming-basics.git" target="_blank" rel="noopener noreferrer"
+                class="source-link">
+                <span>Author GitHub link</span>
+                <img src="./images/icons/open_in_new_1.svg" alt="Link icon" class="link-icon">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
