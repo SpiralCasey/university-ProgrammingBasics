@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: auto;
+    font-family: "Share Tech Mono", monospace;
+    height: 100%;
+    background: white;
+}
+
+.right-panel {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card-details {
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.card-preview {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(135deg, #6d0aa7, #680835, #2e0347);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Share Tech Mono', monospace;
+    transform: perspective(800px) rotateY(3deg);
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: perspective(800px) rotateY(0deg) scale(1.03);
+}
+
+.card.front {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card.back {
+    background: linear-gradient(to bottom, #e0e0e0, #cfcfcf);
+    color: #000;
+    padding-top: 50px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chip {
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#ccc, #888);
+    border-radius: 8px;
+}
+
+.card-logo {
+    width: 60px;
+    height: auto;
+}
+
+.card-number {
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.card-name {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.black-strip {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #333;
+}
+
+.card-date {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 0.9em;
+}
+
+.cvc-box {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #ccc;
+    padding: 10px;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-container,
+.thank-you {
+    width: 100%;
+    max-width: 300px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment-form .name-label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.payment-form input {
+
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.payment-form input,
+.payment-form button {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: #1e002f;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3b003f;
+}
+
+.thank-you {
+    text-align: center;
+}
+
+.thank-you h2 {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.checkmark {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkmark::after {
+    content: "✓";
+    color: white;
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    font-size: 0.7em;
+}
+
+input.error-border {
+    border-color: red;
+}
+
+@media (max-width: 768px) {
+    .card-details {
+        flex-direction: column;
+    }
+
+    .card-preview,
+    .right-panel {
+        flex: 1;
+        width: 100%;
+    }
+
+    .cards {
+        align-items: center;
+    }
+}
+
+footer {
+    font-size: 14px;
+    color: gray;
+    padding: 0.8em 0 0 0.8em;
+}
+
+.footer-links a {
+    color: #757575;
+    text-decoration: underline;
+    margin-bottom: -20px;
+}
+
+.footer-links a:hover {
+    color: lightsalmon;
+}
+
+.source-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.source-link img {
+    height: 0.9em;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Delails</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/interactive-card-details-form.css">
+    <link rel="icon" type="image/x-icon" href="./images/icons/credit_card_1.svg">
+</head>
+
+<body>
+    <main>
+        <div class="card-details">
+            <div class="card-preview">
+                <div class="cards">
+                    <div class="card front">
+                        <div class="circle"></div>
+                        <div class="card-number" id="display-number">0000 0000 0000 0000</div>
+                        <div class="card-name" id="display-name">JANE APPLESEED</div>
+                    </div>
+
+                    <div class="card back">
+                        <div class="black-strip"></div>
+                        <div class="card-date" id="display-date">00/00</div>
+                        <div class="cvc-box" id="display-cvc">000</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="form-container" id="form-container">
+                    <form class="payment-form" id="payment-form" novalidate>
+
+                        <div class="form-group">
+                            <label class="name-label" for="card-name">CARDHOLDER NAME</label>
+                            <input type="text" id="card-name" placeholder="e.g. Jane Appleseed" required>
+                            <span class="error" id="error-name"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="name-label" for="card-number">CARD NUMBER</label>
+                            <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" required
+                                maxlength="19">
+                            <span class="error" id="error-number"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="name-label" for="exp-mm">EXP. DATE (MM/YY)</label>
+                                <div class="date-inputs">
+                                    <input type="text" id="exp-mm" placeholder="MM" maxlength="2" required>
+                                    <input type="text" id="exp-yy" placeholder="YY" maxlength="2" required>
+                                </div>
+                                <span class="error" id="error-date"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="name-label" for="cvc">CVC</label>
+                                <input type="text" id="cvc" placeholder="e.g. 123" maxlength="3" required>
+                                <span class="error" id="error-cvc"></span>
+                            </div>
+                        </div>
+
+                        <button type="submit">Confirm</button>
+                    </form>
+                </div>
+
+                <div class="thank-you hidden" id="thank-you">
+                    <div class="checkmark"></div>
+                    <h2>Thank you!</h2>
+                    <p>We've added your card details</p>
+                    <button type="submit">Continue</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/CauldronOcean/Programming-basics.git" target="_blank" rel="noopener noreferrer"
+                class="source-link">
+                <span>Author GitHub link</span>
+                <img src="./images/icons/open_in_new_1.svg" alt="Link icon" class="link-icon">
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/interactive-card-details-form.js"></script>
+</body>
+
+</html>
