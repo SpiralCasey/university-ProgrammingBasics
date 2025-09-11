@@ -1,3 +1,3 @@
 # Programming-basics
 
-Here are my works, completed as part of studying the basics of programming within the "IT Design" course at the Kyiv Aviation Institute
+Compiled works originating from the "Programming-Basics" segment of the "IT Design" course, "Kyiv Aviation Institute" National University. Maintained as evidence of progression through foundational segments.
